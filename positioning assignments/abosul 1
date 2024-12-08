@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning Lab</title>
+  <style type="text/css">
+    /* ---------------Box Sizing----------------- */
+    html {
+      box-sizing: border-box;
+    }
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+    body {
+      background-color: #ECECEC;
+      font-weight: bold;
+      font-family: Tahoma, Geneva, sans-serif;
+      color: #FFF;
+      text-align: center;
+      line-height: 24px;
+    }
+    #wrapper {
+      background-color: #FFF;
+      border: 1px solid #c0c0c0;
+      width: 800px;
+      margin-right: auto;
+      margin-left: auto;
+      text-shadow: 2px 2px #000;
+    }
+    #pink {
+      background-color: #ff4ace;
+      width: 100px;x;
+      height: 100px;
+      position:absolute;
+      left:0;
+      top:0;
+
+    }
+    #green {
+      background-color: #1aca3a;
+      width: 100px;x;
+      height: 100px;
+      position:absolute;
+      right:0;
+      top:0;
+
+    }
+    #yellow {
+      background-color: #fcff90;
+      width: 100px;x;
+      height: 100px;
+      position:absolute;
+      left:0;
+      bottom:0;
+
+    }
+    #purple {
+      background-color: #b690ec;
+      width: 100px;x;
+      height: 100px;
+      position:absolute;
+      right:0;
+      bottom:0;
+
+    }
+    #footer {
+      background-color: #666;
+      margin:20px auto;
+      width: 100px;x;
+      height: 100px;
+    }
+    h1 {
+      color: #000;
+      font-weight: normal;
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Absolute 1</h1>
+  <section id="wrapper">
+    <div id="pink">pink</div>
+    <div id="green">green</div>
+    <div id="yellow">yellow</div>
+    <div id="purple">purple</div>
+    <div id="footer">Footer</div>
+  </section>
+</body>
+
+</html>
