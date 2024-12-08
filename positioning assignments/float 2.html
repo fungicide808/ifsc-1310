@@ -11,75 +11,83 @@
     html {
       box-sizing: border-box;
     }
+
     *,
     *:before,
     *:after {
       box-sizing: inherit;
     }
+
     body {
       background-color: #ECECEC;
       font-weight: bold;
       font-family: Tahoma, Geneva, sans-serif;
-      color: #FFF;
+      color: #333; /* Changed text color for readability */
       text-align: center;
       line-height: 24px;
     }
 
+    #wrapper {
+      background-color: #FFF;
+      border: 1px solid #c0c0c0;
+      width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      position: relative;
+    }
 
+    /* Floating boxes */
+    #pink,
+    #green,
+    #yellow,
+    #purple {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+    }
 
-  <head>
-<meta charset="UTF-8">
-<title>Positioning Lab</title>
-<style type="text/css">
-* {
-	margin: 0px;
-	padding: 0px;
-}
-body {
-	background-color: #ECECEC;
-	font-weight: bold;
-	font-family: Tahoma, Geneva, sans-serif;
-	color: #FFF;
-	text-align: center;
-	line-height: 24px;
-}
-#wrapper {
-	background-color: #FFF;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	width: 800px;
-	margin-right: auto;
-	margin-left: auto;
-}
-#pink {
-	background-color: #ff4ace;
-}
-#green {
-	background-color: #1aca3a;
-}
-#yellow {
-	background-color: #fcff90;
-}
-#purple {
-	background-color: #b690ec;
-}
-#footer {
-	background-color: #666;
-}
-h1 {
-	color: #000;
-	font-weight: normal;
-	padding: 50px;
-}
-</style>
+    #pink {
+      background-color: #ff4ace;
+      top: 0;
+      left: 0;
+    }
 
+    #green {
+      background-color: #1aca3a;
+      top: 0;
+      right: 0;
+    }
+
+    #yellow {
+      background-color: #fcff90;
+      bottom: 0;
+      left: 0;
+    }
+
+    #purple {
+      background-color: #b690ec;
+      bottom: 0;
+      right: 0;
+    }
+
+    #footer {
+      background-color: #666;
+      color: #FFF;
+      margin: 20px auto;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+    }
+
+    h1 {
+      color: #000;
+      font-weight: normal;
+      padding: 50px;
+    }
+  </style>
 </head>
+
 <body>
   <h1>Float 2</h1>
   <section id="wrapper">
@@ -92,3 +100,4 @@ h1 {
 </body>
 
 </html>
+
